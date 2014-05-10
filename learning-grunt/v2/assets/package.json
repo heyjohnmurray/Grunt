@@ -1,0 +1,8 @@
+{
+	"name": "RV-Grunt-Spin-Up",
+	"version": "0.1.0",
+  	"devDevependencies": {},
+  	"devDependencies": {
+    	"grunt": "^0.4.4"
+  	}
+}
