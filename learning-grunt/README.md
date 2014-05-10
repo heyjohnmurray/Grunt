@@ -6,5 +6,3 @@ Folder 'v4' is the first good working version I have made. It compiles sass file
 
 It's not much, but it's a start.
 
-
-
