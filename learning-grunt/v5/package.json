@@ -1,0 +1,12 @@
+{
+  "name": "RV-Full-Folder-Watch",
+  "version": "0.1.0",
+  "description": "This version will do the same as version 4, but it will watch the whole project folder instead of limiting it to the 'assets' folder",
+  "author": "John Murray",
+  "devDependencies": {
+    "grunt": "^0.4.4"
+  }
+}
+//create folder structure
+//npm init to do .json file
+//npm install grunt --save-dev for local grunt install
