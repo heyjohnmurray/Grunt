@@ -7,7 +7,7 @@ module.exports = function(grunt){
 		pkg: grunt.file.readJSON('package.json'),
 
 		jshint: {
-			files: 'assets/js/project.min.js',
+			files: 'assets/js/project.js',
 			options: {
 		    	//these settings are just for now and up for debate
 			    curly:   true,
@@ -17,16 +17,17 @@ module.exports = function(grunt){
                 newcap:  true,
                 noarg:   true,
                 sub:     true,
-                undef:   true,
                 boss:    true,
                 eqnull:  true,
                 browser: true,
                 
                 globals: {
-                	// General Purpose Libraries
                 	$: true,
-                	jQuery: true,
-                }
+		        	jQuery: true,
+		        	console: true,
+					module: true,
+		        	document: true
+		        }
 			}
 		},
 
@@ -57,7 +58,7 @@ module.exports = function(grunt){
 	      	dist: {
 	        	files: {
 	        		//For RV we'll have to decide what files need to be compressed
-	          		'assets/js/project/project.min.js': ['assets/js/project.js']
+	          		'assets/js/project.min.js': ['assets/js/project.js']
 	        	}
 	      	}
 	    },
@@ -72,7 +73,8 @@ module.exports = function(grunt){
 			},
 
 			js: {
-				files: 'assets/js/*.js',
+				files: 'assets/js/*.js',		//watching every js file now. probably should decide on specific files
+				tasks: ['jshint', 'uglify'],	//hint and uglify on save
 				options: {
 					livereload: true
 				}

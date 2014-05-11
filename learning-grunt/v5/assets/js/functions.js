@@ -42,4 +42,4 @@ function fnHailoEventTracking(e) {
 		// do default hQ.store
 		hQ.store(event, params);
 	}
-}
+} 
