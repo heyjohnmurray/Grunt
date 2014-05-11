@@ -5,7 +5,7 @@ module.exports = function(grunt){
 		sass: {
 			dist: {
 				options: {
-					banner: '/* Copiled CSS comment */',
+					banner: '/* Compiled at <%= grunt.template.today() %> */',
 					style: 'compressed'
 				},
 
@@ -22,7 +22,7 @@ module.exports = function(grunt){
 
 		watch: {
 			css: {
-				files: 'assets/sass/*.scss',
+				files: 'assets/sass/**/*.scss',	//if any sass file in any subfolder changes
 				tasks: ['sass'],
 				options: {
 					livereload: true
@@ -34,6 +34,15 @@ module.exports = function(grunt){
 				options: {
 					livereload: true
 				}
+			},
+
+			html: {
+				//files: 'landing_pages/**/*.		//if any files changes
+				//files: 'landing_pages/**/*.html',	//if html files in landing_pages change
+				files: '**/**/*.html',				//if any html file in the folder changes
+	            options: {
+	                livereload: true
+	            }
 			}
 		}
 	});
@@ -43,5 +52,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	//Default tasks that are run when you type "grunt" in terminal
-	grunt.registerTask('default', ['sass', 'watch']);
+	grunt.registerTask('default', ['sass']);
 }
