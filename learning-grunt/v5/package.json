@@ -4,9 +4,9 @@
   "description": "This version will do the same as version 4, but it will watch the whole project folder instead of limiting it to the 'assets' folder",
   "author": "John Murray",
   "devDependencies": {
-    "grunt": "^0.4.4"
+    "grunt": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-jshint": "^0.10.0"
   }
 }
-//create folder structure
-//npm init to do .json file
-//npm install grunt --save-dev for local grunt install
