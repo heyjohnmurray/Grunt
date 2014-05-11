@@ -9,20 +9,24 @@ module.exports = function(grunt){
 		jshint: {
 			files: 'assets/js/project.min.js',
 			options: {
-			    globals: {
-			    	//these settings are just for now and up for debate
-				    curly:   true,
-	                eqeqeq:  true,
-	                immed:   true,
-	                latedef: true,
-	                newcap:  true,
-	                noarg:   true,
-	                sub:     true,
-	                undef:   true,
-	                boss:    true,
-	                eqnull:  true,
-	                browser: true,
-			    }
+		    	//these settings are just for now and up for debate
+			    curly:   true,
+                eqeqeq:  true,
+                immed:   true,
+                latedef: true,
+                newcap:  true,
+                noarg:   true,
+                sub:     true,
+                undef:   true,
+                boss:    true,
+                eqnull:  true,
+                browser: true,
+                
+                globals: {
+                	// General Purpose Libraries
+                    $:          true,
+                    jQuery:     true,
+                }
 			}
 		},
 
