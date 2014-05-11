@@ -11,6 +11,7 @@ module.exports = function(grunt){
 			files: 'assets/js/project.min.js',
 			options: {
 			    globals: {
+			    	//these settings are just for now and up for debate
 				    curly:   true,
 	                eqeqeq:  true,
 	                immed:   true,
