@@ -2,10 +2,34 @@ module.exports = function(grunt){
 
 	//Grunt task configurations
 	grunt.initConfig({
+
+		//Store your Package file so you can reference its specific data whenever necessary
+		//this is a best practice
+		pkg: grunt.file.readJSON('package.json'),
+
+		jshint: {
+			files: 'assets/js/project.min.js',
+			options: {
+			    globals: {
+				    curly:   true,
+	                eqeqeq:  true,
+	                immed:   true,
+	                latedef: true,
+	                newcap:  true,
+	                noarg:   true,
+	                sub:     true,
+	                undef:   true,
+	                boss:    true,
+	                eqnull:  true,
+	                browser: true,
+			    }
+			}
+		},
+
 		sass: {
 			dist: {
 				options: {
-					banner: '/* Compiled at <%= grunt.template.today() %> */',
+					banner: '/* Compiled at <%= grunt.template.today() %> */',	//see http://gruntjs.com/api/grunt.template for options
 					style: 'compressed'
 				},
 
@@ -48,9 +72,10 @@ module.exports = function(grunt){
 	});
 
 	//Load configured tasks
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	//Default tasks that are run when you type "grunt" in terminal
-	grunt.registerTask('default', ['sass']);
+	grunt.registerTask('default', ['sass','jshint']);
 }
