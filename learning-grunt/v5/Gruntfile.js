@@ -3,8 +3,7 @@ module.exports = function(grunt){
 	//Grunt task configurations
 	grunt.initConfig({
 
-		//Store your Package file so you can reference its specific data whenever necessary
-		//this is a best practice
+		//Store your Package file so you can reference its specific data whenever necessary :: best practice
 		pkg: grunt.file.readJSON('package.json'),
 
 		jshint: {
