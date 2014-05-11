@@ -24,8 +24,8 @@ module.exports = function(grunt){
                 
                 globals: {
                 	// General Purpose Libraries
-                    $:          true,
-                    jQuery:     true,
+                	$: true,
+                	jQuery: true,
                 }
 			}
 		},
@@ -47,6 +47,20 @@ module.exports = function(grunt){
 				}]
 			}
 		},
+
+		uglify: {
+	    	options: {
+	        	banner: '/* Compressed: <%= grunt.template.today() %> */\n',
+	        	mangle: true,
+	      	},
+	      	
+	      	dist: {
+	        	files: {
+	        		//For RV we'll have to decide what files need to be compressed
+	          		'assets/js/project/project.min.js': ['assets/js/project.js']
+	        	}
+	      	}
+	    },
 
 		watch: {
 			css: {
@@ -78,8 +92,9 @@ module.exports = function(grunt){
 	//Load configured tasks
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	//Default tasks that are run when you type "grunt" in terminal
-	grunt.registerTask('default', ['sass','jshint']);
+	grunt.registerTask('default', ['sass','jshint','uglify']);
 }
