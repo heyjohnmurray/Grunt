@@ -54,8 +54,8 @@ From your project folder, you can run the ```npm init``` command, which will pro
 
 While this method is easy and fooolproof, it generates a package.json file that is unnecessarily verbose. Odds are you won't need to provide an "entry point", "test command", or "git repository" while working with Grunt at RV.
 
-
-
+...
+...
 ##### Whatever you do ...
 
 Whichever method you choose, the objective is the same. You need to generate a package.json somehow. It's recommended that you try to try each method to see which you prefer adding to your workflow.
