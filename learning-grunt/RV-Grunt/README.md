@@ -90,4 +90,3 @@ You should also see a "node_modules" folder saved in your project folder. Inside
 
 Now let's try installing some plugins!
 
-## Plugins and Gruntfile.js
