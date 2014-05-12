@@ -35,16 +35,25 @@ We can create a basic package.json file with the following information:
 
 ```
 {
-	"name": "Project name goes here",
+	"name": "Project-Name", // no spaces allowed in the name
 	"version": "0.1.0", // give your project a version number
 	"description": "Basic project description here.",
-	"author": "John Murray",
+	"author": "Your name goes here",
  	"devDependencies": {
-	   	"grunt": "^0.4.4" 
-
-	   	// names and version numbers for 
-	   	// other plugins will do after this. 
-	   	// we'll see how this happens later on.
+		// leave this blank for now 
+		// it gets populated automatically later
 	}
 }
 ```
+
+Note: To avoid errors when installing grunt or grunt plugins later on, make sure you use double quotes (" ") in this file.
+
+##### 2. Use 'npm init'
+
+From your project folder, you can run the ```npm init``` command, which will prompt you with a utility wizard that will assemble a package.json file based on the values you pass it. 
+
+While this method is easy and fooolproof, it generates a package.json file that is unnecessarily verbose. Odds are you won't need to provide an "entry point", "test command", or "git repository" while working with Grunt at RV.
+
+###### Whatever you do ...
+
+Whichever method you choose, the objective is the same. You need to generate a package.json somehow. It's recommended that you try to try each method to see which you prefer adding to your workflow.
