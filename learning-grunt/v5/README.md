@@ -79,7 +79,8 @@ Grunt should now be installed and our package.json file should like something th
 	"description": "Basic project description here.",
 	"author": "Your name goes here",
  	"devDependencies": {
-		"grunt": "^0.4.4" //this information was saved by --save-dev
+		**"grunt": "^0.4.4"** //this information was saved by --save-dev
 	}
 }
 ```
+
