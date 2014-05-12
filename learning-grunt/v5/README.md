@@ -58,3 +58,28 @@ While this method is easy and fooolproof, it generates a package.json file that 
 #### Whatever you do ...
 
 Whichever method you choose, the objective is the same. You need to generate a package.json somehow. It's recommended that you try to try each method to see which you prefer adding to your workflow.
+
+#### Almost there
+
+We're close to having Grunt installed locally. Now that we have our package.json file prepped we just need to run the install command.
+
+Inside your local folder, run ```npm install grunt --save-dev```
+
+##### Breaking It Down
+Let's quickly talk about what's going on here. ```npm install grunt```, when run in a project folder will install a local version of Grunt, obviously. However, the interesting part here is the ```--save-dev``` portion of the command. By adding ```--save-dev```, package.json is automatically given Grunt's name and version number. Now you don't have to wonder whether you're running the right version number in the package.json file because ```--save-dev``` takes away the guess work. Also, ```--save-dev``` works the same way when we install plugins as well. This means keeping package.json up-to-date is stress free.
+
+#### Success!
+
+Grunt should now be installed and our package.json file should like something this:
+
+```
+{
+	"name": "Project-Name",
+	"version": "0.1.0",
+	"description": "Basic project description here.",
+	"author": "Your name goes here",
+ 	"devDependencies": {
+		"grunt": "^0.4.4" //this information was saved by --save-dev
+	}
+}
+```
