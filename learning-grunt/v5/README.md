@@ -33,16 +33,18 @@ The package.json file is the spark that brings Grunt to life in our projects. Wi
 
 We can create a basic package.json file with the following information:
 
-```{
-"name": "Project name goes here",
-"version": "0.1.0",
-  "description": "Basic project description here.",
-  "author": "John Murray",
-  "devDependencies": {
-    "grunt": "^0.4.4",
-    "grunt-contrib-watch": "^0.6.1",	//optional
-    "grunt-contrib-sass": "^0.7.3",		//optional
-    "grunt-contrib-jshint": "^0.10.0",	//optional
-    "grunt-contrib-uglify": "^0.4.0"	//optional
-  }
-}```
+```
+{
+	"name": "Project name goes here",
+	"version": "0.1.0",
+	"description": "Basic project description here.",
+	"author": "John Murray",
+ 	"devDependencies": {
+	   	"grunt": "^0.4.4",
+	   	"grunt-contrib-watch": "^0.6.1",	//optional
+	   	"grunt-contrib-sass": "^0.7.3",		//optional
+	   	"grunt-contrib-jshint": "^0.10.0",	//optional
+   		"grunt-contrib-uglify": "^0.4.0"	//optional
+	}
+}
+```
