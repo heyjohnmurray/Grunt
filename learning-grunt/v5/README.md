@@ -79,8 +79,14 @@ Grunt should now be installed and our package.json file should like something th
 	"description": "Basic project description here.",
 	"author": "Your name goes here",
  	"devDependencies": {
-		**"grunt": "^0.4.4"** //this information was saved by --save-dev
+		"grunt": "^0.4.4" //this information was saved by --save-dev
 	}
 }
 ```
+
+**Note:** Notice, now "grunt" and a version number have been automatically saved to our package.json file.
+
+You should also see a "node_modules" folder saved in your project folder. Inside should be a folder named "grunt".
+
+Now let's try installing some plugins!
 
