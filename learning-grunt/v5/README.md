@@ -34,8 +34,8 @@ The package.json file is the spark that brings Grunt to life in our projects. Wi
 We can create a basic package.json file with the following information:
 
 ```{
-  "name": "Project name goes here",
-  "version": "0.1.0",
+"name": "Project name goes here",
+"version": "0.1.0",
   "description": "Basic project description here.",
   "author": "John Murray",
   "devDependencies": {
