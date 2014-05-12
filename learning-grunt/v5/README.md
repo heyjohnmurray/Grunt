@@ -4,9 +4,9 @@ This is what the RV spin up folder looks like with Grunt.js. We're conidering mo
 
 ### Before We Start
 
-Grunt runs on the Node.js platform. So before we get install Grunt, we need to make sure we have Node installed. It should be as simple as going to the [node.js site](http://www.nodejs.org/download/) and download the Mac Installer.
+Grunt runs on the Node.js platform. So before we install Grunt we need to make sure we have Node installed. It should be as simple as going to the [node.js site](http://www.nodejs.org/download/) and downloading the Mac Installer.
 
-Remember that sometimes when you install new software onto a Mac you need to add 'sudo' to some of your terminal installation commands. If you have any issues, feel free to grab one of the code leads and they should be able to walk you through it. Joseph Lombardo in IT is also a good person to talk to if you have issues with installing Node or if you have permissions issue of any kind.
+Remember that sometimes when you install new software onto a Mac you need to add 'sudo' to some of your terminal installation commands. If you have any issues, feel free to grab one of the code leads, and they should be able to walk you through it. Joseph Lombardo in IT is also a good person to talk to if you have issues with installing Node or if you have permission issues of any kind.
 
 ## Installation
 
@@ -90,3 +90,4 @@ You should also see a "node_modules" folder saved in your project folder. Inside
 
 Now let's try installing some plugins!
 
+## Plugins and Gruntfile.js
