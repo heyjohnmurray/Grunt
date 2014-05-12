@@ -12,7 +12,7 @@ Remember that sometimes when you install new software onto a Mac you need to add
 
 Now that we have Node installed, we'll be able to do everything else through the command line using Node's package manager (NPM). We'll download Grunt and any plugin we use in Grunt through the NPM. So let's get started.
 
-#### Downloading and Installing Grunt Globally
+#### Go Global
 
 Before we start using Grunt we need to install it globally on our computer.
 
@@ -20,3 +20,29 @@ In terminal we run the following command:
 ```npm install -g grunt-cli```
 
 It doesn't matter what folder we're in when we run this command. Grunt knows where to go.
+
+#### Now Go Local
+
+Now that we have Grunt installed globally we can install Grunt on a per project basis. In terminal, 'cd' to the project folder that will be using grunt and install Grunt locally.
+
+There are two easy ways to do this.
+
+##### 1. Create a package.json file
+
+The package.json file is the spark that brings Grunt to life in our projects. Within this file is basic information about your project and what files Grunt needs to have in order to run properly.
+
+We can create a basic package.json file with the following information:
+
+```{
+  "name": "Project name goes here",
+  "version": "0.1.0",
+  "description": "Basic project description here.",
+  "author": "John Murray",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",	//optional
+    "grunt-contrib-sass": "^0.7.3",		//optional
+    "grunt-contrib-jshint": "^0.10.0",	//optional
+    "grunt-contrib-uglify": "^0.4.0"	//optional
+  }
+}```
