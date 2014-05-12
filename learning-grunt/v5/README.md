@@ -23,7 +23,7 @@ It doesn't matter what folder we're in when we run this command. Grunt knows whe
 
 #### Now Go Local
 
-Now that we have Grunt installed globally we can install Grunt on a per project basis. In terminal, 'cd' to the project folder that will be using grunt and install Grunt locally.
+Now that we have Grunt installed globally we can install Grunt on a per project basis. In terminal, ```cd``` to the project folder that will be using grunt and install Grunt locally.
 
 There are two easy ways to do this.
 
