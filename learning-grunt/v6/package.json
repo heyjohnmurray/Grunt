@@ -1,0 +1,9 @@
+{
+  "name": "Test-Install",
+  "version": "0.1.0",
+  "description": "Basic project description here.",
+  "author": "Your name goes here",
+  "devDependencies": {
+    "grunt": "^0.4.4"
+  }
+}
