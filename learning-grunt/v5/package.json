@@ -1,0 +1,13 @@
+{
+  "name": "RV-Full-Folder-Watch",
+  "version": "0.1.0",
+  "description": "This version will do the same as version 4, but it will watch the whole project folder instead of limiting it to the 'assets' folder",
+  "author": "John Murray",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.4.0"
+  }
+}
