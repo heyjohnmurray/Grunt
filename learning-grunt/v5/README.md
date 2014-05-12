@@ -36,15 +36,15 @@ We can create a basic package.json file with the following information:
 ```
 {
 	"name": "Project name goes here",
-	"version": "0.1.0",
+	"version": "0.1.0", // give your project a version number
 	"description": "Basic project description here.",
 	"author": "John Murray",
  	"devDependencies": {
 	   	"grunt": "^0.4.4" 
 
-	   	//names and version numbers for 
-	   	//other plugins will do after this. 
-	   	//we'll see how this happens later on.
+	   	// names and version numbers for 
+	   	// other plugins will do after this. 
+	   	// we'll see how this happens later on.
 	}
 }
 ```
