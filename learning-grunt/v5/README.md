@@ -10,4 +10,4 @@ Remember that sometimes when you install new software onto a Mac you need to add
 
 ## Installation
 
-
+Now that we have Node installed, we'll be able to do everything else through the command line using Node's package manager (NPM). We'll download Grunt and any plugin we use in Grunt through the NPM.
