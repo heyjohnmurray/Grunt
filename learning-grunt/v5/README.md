@@ -40,11 +40,7 @@ We can create a basic package.json file with the following information:
 	"description": "Basic project description here.",
 	"author": "John Murray",
  	"devDependencies": {
-	   	"grunt": "^0.4.4",
-	   	"grunt-contrib-watch": "^0.6.1",	//optional
-	   	"grunt-contrib-sass": "^0.7.3",		//optional
-	   	"grunt-contrib-jshint": "^0.10.0",	//optional
-   		"grunt-contrib-uglify": "^0.4.0"	//optional
+	   	"grunt": "^0.4.4" //names and version numbers for other plugins will do after this. we'll see how this happens later on.
 	}
 }
 ```
