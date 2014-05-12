@@ -14,5 +14,5 @@ $(document).on('ready', function() {
 		parent: false // true by default. this will place the 'active' class on the <a> tag instead of the <li>
 	});
 	$('.main').addClass('grunt-class');
-	$('.main').removeClass('grunt-class-newes');
+
 });
