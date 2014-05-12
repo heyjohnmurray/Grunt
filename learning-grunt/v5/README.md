@@ -46,7 +46,7 @@ We can create a basic package.json file with the following information:
 }
 ```
 
-Note: To avoid errors when installing grunt or grunt plugins later on, make sure you use double quotes (" ") in this file.
+**Note:** To avoid errors when installing grunt or grunt plugins later on, make sure you use double quotes (" ") in this file.
 
 ##### 2. Use 'npm init'
 
